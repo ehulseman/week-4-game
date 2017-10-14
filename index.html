@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet">
+    <title>Crystals Collector Game</title>
+</head>
+
+<body>
+
+    <header id="masthead">
+        <div class="headerText">
+            <h1>Crystals Collector Game</h1>
+        </div>
+    </header>
+
+    <div class="main-content-container">
+
+        <div class="directions">
+
+            <h2>Instructions</h2> <br>
+            <h3>You will be given a random number at the start of the game.</h3> <br>
+            <h3>There are four cyrstals below. By clicking on a crystal, you will add a specific amount of points to your total score.</h3> <br>
+            <h3>You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.</h3> <br>
+            <h3>Each time the game starts, the game will change the values of each crystal.</h3>
+        </div>
+
+        <div class="score">
+            <p>
+                Wins:
+                <span id="userWins">0</span>
+            </p>
+
+            <p>
+                Losses:
+                <span id="userLosses">0</span>
+            </p>
+        </div>
+
+        <div class="computer-number">
+            <p>
+                Number to Guess:
+                <span id="numberToGuess"></span>
+            </p>
+        </div>
+
+        <div class="user-score">
+            <p>
+                Your total score is:
+                <span id="userScore">0</span>
+            </p>
+            <!-- <br> -->
+            <p>
+                <span id="gameOutcome"></span>
+            </p>
+        </div>
+
+        <div id="crystals-container">
+
+        </div>
+
+    </div>
+</body>
+
+</html>
